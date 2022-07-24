@@ -1,9 +1,10 @@
-import Image from "next/image";
 import { Card, CardBody, List, CardTitle } from 'reactstrap';
 import Favorites from "../Favorites";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { PropsProductCard } from '../../pages/interfaces';
 
-export default function ProductCard({ product }) {
+
+export default function ProductCard({ product }:PropsProductCard) {
 
     return (
         <Card className="mt-4">

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 
-export default function HeadComponent(props) {
+export default function HeadComponent(props:any) {
     return (
         <Head>
             <title>Soluevo React Test {props.title ? ` - ${props.title}` : ""}</title>

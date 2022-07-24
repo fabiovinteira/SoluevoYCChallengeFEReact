@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
+import {PropsFavorites} from "../../pages/interfaces";
 
-export default function Favorites({ productId }) {
-    const [favorite, setFavorite] = useState(false);
+export default function Favorites({ productId }:PropsFavorites) {
+    const [favorite, setFavorite] = useState<Boolean>(false);
 
     useEffect(() => {
-        const favoritesLocal = JSON.parse(localStorage.getItem("USER_FAVORITES"));
+        const favoritesLocal:Number[] = JSON.parse(localStorage.getItem("USER_FAVORITES"));
         if (favoritesLocal) {
             favoritesLocal.map(itemId => { itemId === productId ? setFavorite(true) : null });
         }
     }, [productId]);
 
-    const addToFavoritesHandler = (pId) => {
-        const favoritesLocal = JSON.parse(localStorage.getItem("USER_FAVORITES"));
-        const newFavorite = [];
+    const addToFavoritesHandler = (pId:Number) => {
+        const favoritesLocal:Number[] = JSON.parse(localStorage.getItem("USER_FAVORITES"));
+        let newFavorite:Number[] = [];
 
         if (!favoritesLocal && !favorite) {
             newFavorite.push(pId);
