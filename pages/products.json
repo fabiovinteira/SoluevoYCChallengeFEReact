@@ -1,0 +1,23 @@
+[
+    {
+        "id": 123456,
+        "name": "Apple iPhone 13 Pro", 
+        "imageURL": "https://m.media-amazon.com/images/I/51y+xXlXPrL._AC_SX679_.jpg", 
+        "listPrice": 8489.00, 
+        "salePrice": 10499.00
+    },
+    {
+        "id": 234567, 
+        "name": "Samsung Galaxy A03", 
+        "imageURL": "https://m.media-amazon.com/images/I/51KXebDGuBL._AC_SY741_.jpg", 
+        "listPrice": 1124.00, 
+        "salePrice": 1349.00
+    },
+    {
+        "id": 345678, 
+        "name": "Xiaomi Redmi Note 10S", 
+        "imageURL": "https://m.media-amazon.com/images/I/61pOZ7mAn2S._AC_SX679_.jpg", 
+        "listPrice": 1379.00, 
+        "salePrice": 1549.00
+    }
+]
